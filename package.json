@@ -1,0 +1,26 @@
+{
+  "name": "node-graphql-server",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "WTFPL",
+  "author": "Arslan Ahmad <de.arslanahmad@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "lint": "prettier -c . || prettier -w ."
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.22.1",
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.12",
+    "@babel/preset-env": "^7.13.12",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  }
+}
