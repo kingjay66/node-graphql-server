@@ -1,6 +1,6 @@
 # Node GraphQL Server
 
-A GraphQL implementation of JSON Placeholder. For testing purposes only.
+A GraphQL implementation of JSON Placeholder.
 
 ## Live Demo
 
