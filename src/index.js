@@ -1,9 +1,9 @@
 import { ApolloServer } from 'apollo-server-express'
 import dotenv from 'dotenv'
 import express from 'express'
-import PlaceholderAPI from './datasources/PlaceholderAPI'
-import resolvers from './resolvers'
-import typeDefs from './typeDefs'
+import PlaceholderAPI from './datasources/PlaceholderAPI.js'
+import resolvers from './resolvers/index.js'
+import typeDefs from './typeDefs/index.js'
 
 dotenv.config()
 const app = express()

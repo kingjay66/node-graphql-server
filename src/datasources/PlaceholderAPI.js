@@ -1,6 +1,6 @@
 import { RESTDataSource } from 'apollo-datasource-rest'
 
-export default class PlaceholderAPI extends RESTDataSource {
+class PlaceholderAPI extends RESTDataSource {
   constructor() {
     super()
     this.baseURL = 'https://jsonplaceholder.typicode.com/'
@@ -54,3 +54,5 @@ export default class PlaceholderAPI extends RESTDataSource {
     return await this.get(`users/${id}`)
   }
 }
+
+export default PlaceholderAPI
