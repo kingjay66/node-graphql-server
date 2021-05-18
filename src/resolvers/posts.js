@@ -1,36 +1,13 @@
-import axios from 'axios'
-import { BASE_URL } from '../constants'
+export const posts = async (_, __, { dataSources }) =>
+  await dataSources.PlaceholderAPI.getPosts()
 
-export const posts = async () => {
-  try {
-    return (await axios.get(`${BASE_URL}/posts`)).data
-  } catch (err) {
-    return []
-  }
-}
+export const post = async (_, { id }, { dataSources }) =>
+  await dataSources.PlaceholderAPI.getPost(id)
 
-export const post = async (_, { id }) => {
-  try {
-    return (await axios.get(`${BASE_URL}/posts/${id}`)).data
-  } catch (err) {
-    return {}
-  }
-}
+export const user = async (parent, _, { dataSources }) =>
+  await dataSources.PlaceholderAPI.getUser(parent.userId)
 
-export const user = async parent => {
-  try {
-    return (await axios.get(`${BASE_URL}/users/${parent.userId}`)).data
-  } catch (err) {
-    return {}
-  }
-}
-
-export const comments = async parent => {
-  try {
-    return (await axios.get(`${BASE_URL}/comments`)).data.filter(
-      comment => parent.id === comment.postId,
-    )
-  } catch (err) {
-    return {}
-  }
+export const comments = async (parent, _, { dataSources }) => {
+  const res = await dataSources.PlaceholderAPI.getComments()
+  return res.filter(comment => parent.id === comment.postId)
 }

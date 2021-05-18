@@ -12,7 +12,7 @@ export default gql`
     albums: [Album!]!
     photo(id: ID!): Photo
     photos: [Photo!]!
-    todo: Todo
+    todo(id: ID!): Todo
     todos: [Todo!]!
   }
 
