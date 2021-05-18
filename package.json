@@ -4,8 +4,8 @@
   "description": "",
   "keywords": [],
   "license": "WTFPL",
-  "type": "module",
   "author": "Arslan Ahmad <de.arslanahmad@gmail.com>",
+  "type": "module",
   "main": "src/index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
