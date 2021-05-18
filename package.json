@@ -8,7 +8,7 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "nodemon --exec babel-node .",
-    "start": "cross-env NODE_ENV=production babel-node .",
+    "start": "babel-node .",
     "pretty": "prettier -c . || prettier -w ."
   },
   "dependencies": {

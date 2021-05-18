@@ -18,7 +18,7 @@ const server = new ApolloServer({
 })
 server.applyMiddleware({
   app,
-  path: process.env.NODE_ENV === 'production' ? '/' : '/graphql',
+  path: '/',
 })
 
 app.listen({ port }, () =>
