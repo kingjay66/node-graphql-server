@@ -1,8 +1,12 @@
-# node-graphql-server
+# Node GraphQL Server
 
-A GraphQL implementation of JSON Placeholder. For testing purposes only.
+A GraphQL implementation of JSON Placeholder.
 
-## Setup:
+## Live Demo
+
+Click [here](https://jsonplaceholder-graphq-server.herokuapp.com/) to open the GraphQL Playground to test this out!
+
+## Setup
 
 1.  Clone the project
 2.  Run `yarn install`
