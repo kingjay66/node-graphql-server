@@ -2,7 +2,6 @@ import { ApolloServer } from 'apollo-server-express'
 import dotenv from 'dotenv'
 import express from 'express'
 import PlaceholderAPI from './datasources/PlaceholderAPI.js'
-import keep_alive from './keep-alive.js'
 import resolvers from './resolvers/index.js'
 import typeDefs from './typeDefs/index.js'
 
