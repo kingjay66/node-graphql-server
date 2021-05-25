@@ -28,5 +28,3 @@ app.listen({ port }, () =>
     }`,
   ),
 )
-
-keep_alive()
