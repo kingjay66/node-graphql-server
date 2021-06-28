@@ -4,7 +4,7 @@ A GraphQL implementation of JSON Placeholder.
 
 ## Live Demo
 
-Click [here](https://jsonplaceholder-graphq-server.herokuapp.com/) to open the GraphQL Playground to test this out!
+Click [here](https://jsonplaceholder-graphql-server.herokuapp.com/) to open the GraphQL Playground to test this out!
 
 ## Setup
 
